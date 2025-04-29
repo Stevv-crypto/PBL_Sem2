@@ -29,3 +29,15 @@ Route::get('/about', function() {
 Route::get('/contact', function() {
     return view('pages/contact');
 });
+
+Route::get('/detail_product', function () {
+    return view('pages/detail_product');
+});
+
+Route::get('/cart', function () {
+    return view('pages/cart');
+});
+
+Route::get('/checkout', function () {
+    return view('pages/checkout');
+});
