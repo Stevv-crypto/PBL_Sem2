@@ -14,6 +14,18 @@ Route::get('/category', function() {
     return view('pages/category');
 });
 
-Route::get('/home_page', function() {
+Route::get('/invoice', function() {
     return view('pages/invoice');
+});
+
+Route::get('/profile', function() {
+    return view('pages/manage_account');
+});
+
+Route::get('/about', function() {
+    return view('pages/about');
+});
+
+Route::get('/contact', function() {
+    return view('pages/contact');
 });
