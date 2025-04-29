@@ -1,9 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\viewAllController;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/register', function() {
+    return view('pages/register');
 });
 
 Route::get('/home_page', function() {
@@ -18,7 +23,7 @@ Route::get('/invoice', function() {
     return view('pages/invoice');
 });
 
-Route::get('/profile', function() {
+Route::get('/manage_account', function() {
     return view('pages/manage_account');
 });
 
@@ -49,3 +54,25 @@ Route::get('/dashboard', function () {
 Route::get('/inbox', function () {
     return view('pages/inbox');
 });
+
+Route::get('/login', function() {
+    return view('pages/login');
+});
+
+Route::get('/viewAll', function() {
+    return view('pages/viewAll');
+});
+
+Route::get('/orderList', function() {
+    return view('pages/orderList');
+});
+
+Route::get('/forgotPassword1', function() {
+    return view('pages/forgotPassword1');
+});
+
+Route::get('/forgotPassword2', function() {
+    return view('pages/forgotPassword2');
+});
+
+Route::get('/viewAll', [viewAllController::class, 'tampilProduk']);
