@@ -7,5 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get('/home_page', function() {
-    return view('home_page');
+    return view('pages/home_page');
+});
+
+Route::get('/category', function() {
+    return view('pages/category');
+});
+
+Route::get('/home_page', function() {
+    return view('pages/invoice');
 });
