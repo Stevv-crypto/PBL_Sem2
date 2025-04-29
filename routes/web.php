@@ -41,3 +41,11 @@ Route::get('/cart', function () {
 Route::get('/checkout', function () {
     return view('pages/checkout');
 });
+
+Route::get('/dashboard', function () {
+    return view('pages/dashboard');
+});
+
+Route::get('/inbox', function () {
+    return view('pages/inbox');
+});
